@@ -24,13 +24,9 @@ class LRUCache:
         """
         if city in self.cache_memory:
             self.update(city)
-            # print(self.cache_memory)
-            # print("hit!")
             return "hit"
         else:
             self.update(city)
-            # print("miss!")
-            # print(self.cache_memory)
             return "miss"
 
 def solution(cacheSize, cities):
